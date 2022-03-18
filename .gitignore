@@ -1,0 +1,9 @@
+node_modules
+
+#Hardhat files
+cache
+artifacts
+proposals.json
+typechain-types
+gas-report.txt
+deployments
