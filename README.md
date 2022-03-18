@@ -91,23 +91,29 @@ Additionally, you can do it all manually on your own local network like so:
 yarn hardhat node
 ```
 
-2. Propose a new value to be added to our Box contract
-
+2. Compile & deploy your smart contracts to running node
 In a second terminal (leave your blockchain running)
+
+```
+yarn hardhat deploy
+```
+
+3. Propose a new value to be added to our Box contract
+
 ```
 yarn hardhat run scripts/propose.ts --network localhost
 ```
 
-3. Vote on that proposal
+4. Vote on that proposal
 
 ```
 yarn hardhat run scripts/vote.ts --network localhost
 ```
 
-4. Queue & Execute proposal!
+5. Queue & Execute proposal!
 
 ```
-yarn hardhat run scripts/queue-and-execute.ts --network localhost
+yarn hardhat run scripts/queue_and_execute.ts --network localhost
 ```
 
 
